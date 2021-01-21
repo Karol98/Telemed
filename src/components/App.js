@@ -7,16 +7,16 @@ import Login from "./Login"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
-import Main from "./Main";
+import Chat from "./Chat";
 
 function App() {
   return (
         <Router>
           <AuthProvider>
             <Switch>
-              <PrivateRoute exact path="/profile" component={Dashboard} />
+              <PrivateRoute exact path="/Dashboard" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
-              <Route path="/" component={Main} />
+              <PrivateRoute path="/chat" component={Chat}/>
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
