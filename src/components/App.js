@@ -8,7 +8,7 @@ import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import Chat from "./Chat";
-
+import Home from "./Home"
 function App() {
   return (
         <Router>
@@ -16,6 +16,7 @@ function App() {
             <Switch>
               <PrivateRoute exact path="/Dashboard" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
+              <PrivateRoute path="/home" component={Home} />
               <PrivateRoute path="/chat" component={Chat}/>
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
