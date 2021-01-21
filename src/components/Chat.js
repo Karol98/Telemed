@@ -5,20 +5,11 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
-
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
-    
-        apiKey: "AIzaSyCUKL12bEdFsKvMNaVoWh5iNlCLet3rjfw",
-        authDomain: "telemed-300210.firebaseapp.com",
-        projectId: "telemed-300210",
-        storageBucket: "telemed-300210.appspot.com",
-        messagingSenderId: "574925208539",
-        appId: "1:574925208539:web:7519ec26326e948de245fe"
- 
-})
+
+
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -33,42 +24,23 @@ function Chat() {
     <div className="App">
       <header>
         <h1>⚛️🔥💬</h1>
-        <SignOut />
+       
       </header>
 
       <section>
-        {user ? <ChatRoom /> : <SignIn />}
+        <ChatRoom /> 
       </section>
 
     </div>
   );
 }
 
-function SignIn() {
-
-  const signInWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
-  }
-
-  return (
-    <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
-    </>
-  )
-
-}
-
-function SignOut() {
-  return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
-  )
-}
 
 
-function ChatRoom() {
+
+function ChatRoom(props) {
   const dummy = useRef();
+ // const {text, uid} = props.message;
   const messagesRef = firestore.collection('messages');
   const query = messagesRef.orderBy('createdAt').limit(25);
 
@@ -128,3 +100,4 @@ function ChatMessage(props) {
 
 
 export default Chat;
+
