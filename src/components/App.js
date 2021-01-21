@@ -20,6 +20,7 @@ function App() {
               <PrivateRoute path="/chat" component={Chat}/>
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
+              <Route path="/" component={Home} />
               <Route path="/forgot-password" component={ForgotPassword} />
             </Switch>
           </AuthProvider>
