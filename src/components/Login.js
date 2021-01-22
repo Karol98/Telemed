@@ -3,15 +3,23 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import NaviBar from "./NaviBar";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import 'firebase/analytics';
 
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
 export default function Login() {
   const emailRef = useRef()
+  const auth = firebase.auth();
   const passwordRef = useRef()
   const { login } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
   const history = useHistory()
-
+  const [user] = useAuthState(auth);
+  
   async function handleSubmit(e) {
     e.preventDefault()
 
@@ -26,6 +34,25 @@ export default function Login() {
 
     setLoading(false)
   }
+
+
+  function SignIn() {
+
+    const signInWithGoogle = () => {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithPopup(provider);
+    }
+  
+    return (
+      <>
+        <Button className="w-100" onClick={signInWithGoogle}>Zaloguj się przez google</Button>
+        
+      </>
+    )
+  
+  }
+
+  
 
   return (
     <>
@@ -43,15 +70,19 @@ export default function Login() {
               <Form.Label>Hasło:</Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
+            
             <Button disabled={loading} className="w-100" type="submit">
               Zaloguj
             </Button>
+           <br></br>  <br></br>
+            <SignIn />
           </Form>
           <div className="w-100 text-center mt-3">
             <Link to="/forgot-password">Zapomniałeś hasła?</Link>
           </div>
         </Card.Body>
       </Card>
+      
       <div className="w-100 text-center mt-2">
         Nie masz konta? <Link to="/signup">Zarejestruj się</Link>
       </div>
