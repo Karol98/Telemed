@@ -1,16 +1,14 @@
 import React, { useRef, useState } from 'react';
-import './Chat.css';
 
+import './Style.css'
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-
-
-
-
+import NaviBar from './NaviBar'
+import Footer from './Footer'
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
@@ -19,30 +17,34 @@ const analytics = firebase.analytics();
 function Chat() {
 
   const [user] = useAuthState(auth);
-
+   
   return (
-      <div className="App">
-        <header>
-          <h1>⚛️🔥💬</h1>
+    <>
+    <NaviBar/>
+    <div className="App">
+      <header>
+        <h1>⚛️🔥💬</h1>
+       
+      </header>
 
-        </header>
+      <section>
+        <ChatRoom /> 
+        
+      </section>
 
-        <section>
-          <ChatRoom />
-        </section>
-
-      </div>
+    </div>
+    <Footer/>
+    </>
   );
 }
 
 
 
 
-function ChatRoom(props) {
+function ChatRoom() {
   const dummy = useRef();
-  // const {text, uid} = props.message;
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(25);
+  const query = messagesRef.orderBy('createdAt').limit(100);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 
@@ -74,7 +76,7 @@ function ChatRoom(props) {
 
     </main>
 
-    <form onSubmit={sendMessage}>
+    <form class="form" onSubmit={sendMessage}>
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
@@ -90,13 +92,15 @@ function ChatMessage(props) {
 
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
-  return (<>
+  return (<><div id="body">
     <div className={`message ${messageClass}`}>
       <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
-      <p>{text}</p>
+      <p class="p">{text}</p>
+    </div>
     </div>
   </>)
 }
 
 
 export default Chat;
+
