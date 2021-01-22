@@ -18,9 +18,9 @@ export default function ForgotPassword() {
       setError("")
       setLoading(true)
       await resetPassword(emailRef.current.value)
-      setMessage("Check your inbox for further instructions")
+      setMessage("Sprawdz swoją pocztę w celu zresetowania hasła")
     } catch {
-      setError("Failed to reset password")
+      setError("Adres e-mail nieprawidłowy")
     }
 
     setLoading(false)
@@ -35,20 +35,20 @@ export default function ForgotPassword() {
           {message && <Alert variant="success">{message}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Adres e-mail:</Form.Label>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
-              Reset Password
+              Zresetuj hasło
             </Button>
           </Form>
           <div className="w-100 text-center mt-3">
-            <Link to="/login">Login</Link>
+            <Link to="/login">Zaloguj się</Link>
           </div>
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup">Sign Up</Link>
+        Potrzebujesz konta? <Link to="/signup">Zarejestruj się</Link>
       </div>
     </>
   )

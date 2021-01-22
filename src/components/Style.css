@@ -1,0 +1,10 @@
+.container img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    position: fixed;
+    width: 200px;
+    right: 400px;
+    top: 50px;
+    transform : rotate(20deg);
+}

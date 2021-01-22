@@ -7,6 +7,10 @@ import 'firebase/auth';
 import 'firebase/analytics';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+
+
+
+
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
@@ -17,17 +21,17 @@ function Chat() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="App">
-      <header>
-        <h1>⚛️🔥💬</h1>
-       
-      </header>
+      <div className="App">
+        <header>
+          <h1>⚛️🔥💬</h1>
 
-      <section>
-        <ChatRoom /> 
-      </section>
+        </header>
 
-    </div>
+        <section>
+          <ChatRoom />
+        </section>
+
+      </div>
   );
 }
 
@@ -36,7 +40,7 @@ function Chat() {
 
 function ChatRoom(props) {
   const dummy = useRef();
- // const {text, uid} = props.message;
+  // const {text, uid} = props.message;
   const messagesRef = firestore.collection('messages');
   const query = messagesRef.orderBy('createdAt').limit(25);
 
@@ -96,4 +100,3 @@ function ChatMessage(props) {
 
 
 export default Chat;
-
