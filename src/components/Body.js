@@ -2,6 +2,11 @@ import React from "react";
 
 
 export default function Body() {
+    const auth = firebase.auth();
+    const firestore = firebase.firestore();
+    const analytics = firebase.analytics();
+
+    const [buttonChat,SetbuttonChat] = useState(false);
 
     return (
         <div className="container">
@@ -10,7 +15,10 @@ export default function Body() {
                     <h2 className="font-weight-bold">Chat</h2>
                     <p>Wejdz na nasz chat publiczny, gdzie możesz w czasie rzeczywistym oraz anonimowo
                         dyskutować z innymi użytkownikami</p>
-                    <p><a className="btn btn-secondary"  role="button">Chatuj! &raquo;</a></p>
+                      {buttonChat ? <Chat />:null}    
+                        <button className="btn btn-secondary" onClick={() => SetbuttonChat(!buttonChat)}>
+                         Chatuj!
+                        </button>
                 </div>
                 <div className="col-md-4">
                     <h2 className="font-weight-bold">Lekarze w okolicy</h2>
