@@ -1,22 +1,11 @@
 
-import React, { useRef, useState } from 'react';
+import React, {useState } from 'react';
 import Chat from './Chat'
-
-
-
-
-
-
-
-import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
 
 export default function Body() {
-    const auth = firebase.auth();
-    const firestore = firebase.firestore();
-    const analytics = firebase.analytics();
 
     const [buttonChat,SetbuttonChat] = useState(false);
 

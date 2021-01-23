@@ -9,6 +9,7 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import Chat from "./Chat";
 import Home from "./Home"
+import DoctorFinder from "./DoctorFinder";
 function App() {
   return (
         <Router>
@@ -19,6 +20,7 @@ function App() {
               <PrivateRoute path="/home" component={Home} />
               <PrivateRoute path="/chat" component={Chat}/>
               <Route path="/signup" component={Signup} />
+              <Route path="/find" component={DoctorFinder}/>
               <Route path="/login" component={Login} />
               <Route path="/" component={Home} />
               <Route path="/forgot-password" component={ForgotPassword} />
