@@ -19,16 +19,13 @@ export default function NaviBar() {
             <div className="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item ">
-                        <a className="nav-link">Główna strona <span className="sr-only">(current)</span></a>
+                        <Link to="/"> <a className="nav-link">Główna strona <span className="sr-only">(current)</span></a></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Nasi Lekarze</a>
+                        <Link to="/contact"><a className="nav-link">Kontakt</a></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Kontakt</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">O nas</a>
+                        <Link to="/about"><a className="nav-link">O nas</a></Link>
                     </li>
 
                 </ul>

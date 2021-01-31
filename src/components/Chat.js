@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 
-import './style.css'
+import './css/style.css'
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -34,7 +34,7 @@ function Chat() {
 function ChatRoom() {
     const dummy = useRef();
     const messagesRef = firestore.collection('messages');
-    const query = messagesRef.orderBy('createdAt').limit(100);
+    const query = messagesRef.orderBy('createdAt').limit(1000);
 
     const [messages] = useCollectionData(query, {idField: 'id'});
 
@@ -80,13 +80,14 @@ function ChatMessage(props) {
     const {text, uid, photoURL} = props.message;
 
     const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-
+    const DEFAULT_IMAGE="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
     return (<>
         <div id="body">
 
             <div className={`message ${messageClass}`}>
-                <img id="photoChat" alt="" src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'}/>
-                <p class="p">{text}</p>
+                <img id="photoChat"  src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} onError={(e)=>{e.target.src=DEFAULT_IMAGE}}/>
+                
+                <p className="p">{text}</p>
             </div>
         </div>
     </>)

@@ -8,6 +8,9 @@ import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import Chat from "./Chat";
+import Diagnose from "./Diagnose";
+import About from "./About";
+import Contact from "./Contact";
 import Home from "./Home"
 import DoctorFinder from "./DoctorFinder";
 function App() {
@@ -17,10 +20,12 @@ function App() {
             <Switch>
               <PrivateRoute exact path="/Dashboard" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
-              <PrivateRoute path="/home" component={Home} />
               <PrivateRoute path="/chat" component={Chat}/>
+              <Route path="/about" component={About}/>
+              <Route path="/contact" component={Contact} />
               <Route path="/signup" component={Signup} />
               <Route path="/find" component={DoctorFinder}/>
+              <Route path="/diagnose" component={Diagnose}/>
               <Route path="/login" component={Login} />
               <Route path="/" component={Home} />
               <Route path="/forgot-password" component={ForgotPassword} />
