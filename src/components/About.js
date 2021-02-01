@@ -16,7 +16,7 @@ export default function About() {
         <>
             <meta charSet="utf-8"/>
             <title>TeleMed</title>
-            <div className="jumbotron">
+            <div className="jumbotron mt-5">
                 <div className="container">
                     <img id="logo_pjatk" src={photo} alt="logo"/><br/>
 

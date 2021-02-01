@@ -12,7 +12,7 @@ export default function Body() {
     const [buttonChat, SetbuttonChat] = useState(false);
     const [user] = useAuthState(auth);
     return (
-        <div className="container container_body">
+        <div className="container container_body mt-5">
             <div className="row justify-content-center">
                 <div className="col-md-4">
                     <h2 className="font-weight-bold">Chat</h2>
@@ -35,7 +35,6 @@ export default function Body() {
                     <Link to="/find"><p><a className="btn btn-secondary" role="button">Szukaj! &raquo;</a></p></Link>
                 </div>
             </div>
-            <hr/>
         </div>
     )
 }

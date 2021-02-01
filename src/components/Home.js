@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <meta charSet="utf-8"/>
             <title>TeleMed</title>
-            <div className="jumbotron">
+            <div className="jumbotron mt-5">
                 <div className="container">
                     <h1 className="display-3">Sztuczna Inteligencja!</h1>
                     <img id="photo" src={photo} alt=""/>

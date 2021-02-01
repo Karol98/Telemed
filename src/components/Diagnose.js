@@ -1,5 +1,4 @@
 import React from "react";
-import photo from "./img/photo.png";
 import Footer from "./Footer";
 import NaviBar from "./NaviBar";
 

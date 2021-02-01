@@ -10,7 +10,7 @@ export default function Contact() {
         <>
             <meta charSet="utf-8"/>
             <title>TeleMed</title>
-            <div className="jumbotron">
+            <div className="jumbotron mt-5">
                 <div className="container">
                     <table class="table table-striped">
                         <thead>

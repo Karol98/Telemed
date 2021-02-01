@@ -51,7 +51,7 @@ export default function DoctorFinder() {
     return (
         <div>
             <NaviBar/>
-            <div className="jumbotron">
+            <div className="jumbotron mt-5">
                 <div className="container">
                     <div className="justify-content-center d-flex ">
                         <Form onSubmit={handleSearch} className="mt-5">
