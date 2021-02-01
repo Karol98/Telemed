@@ -15,8 +15,8 @@ export default  function About(props) {
     var googleTranslate = require('google-translate')(api);
   
     var texts = props.textToTranslate;
-    
-    googleTranslate.translate(texts, 'en',  function(err, translation) {
+    var language = props.lan;
+    googleTranslate.translate(texts, language,  function(err, translation) {
       
         getInfo(translation.translatedText);
     });	
