@@ -37,7 +37,7 @@ export default function Body() {
                 <div className="col-md-4">
                     <h2 className="font-weight-bold">Lekarze w okolicy</h2>
                     <p>Znajdz lekarzy w swojej okolicy przy użyciu map google. </p>
-                    <p><a className="btn btn-secondary" role="button">Szukaj! &raquo;</a></p>
+                    <Link to="/find"><p><a className="btn btn-secondary" role="button">Szukaj! &raquo;</a></p></Link>
                 </div>
                 <div className="col-md-4">
                     <h2 className="font-weight-bolder">Tutaj jeszcze jakaś funkcjonalność</h2>
