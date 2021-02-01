@@ -6,7 +6,6 @@ import photo from "./img/photo.png"
 import './css/style.css'
 import {Link} from "react-router-dom";
 
-
 export default function Home() {
     return (
         <>

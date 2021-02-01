@@ -68,7 +68,7 @@ function ChatRoom() {
         <form className="form" onSubmit={sendMessage}>
 
             <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="napisz coś.."/>
-        
+
             <button type="submit" disabled={!formValue}>🛆</button>
 
         </form>
@@ -80,13 +80,16 @@ function ChatMessage(props) {
     const {text, uid, photoURL} = props.message;
 
     const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-    const DEFAULT_IMAGE="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+    const DEFAULT_IMAGE = "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
     return (<>
         <div id="body">
 
             <div className={`message ${messageClass}`}>
-                <img id="photoChat"  src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} onError={(e)=>{e.target.src=DEFAULT_IMAGE}}/>
-                
+                <img id="photoChat" src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'}
+                     onError={(e) => {
+                         e.target.src = DEFAULT_IMAGE
+                     }}/>
+
                 <p className="p">{text}</p>
             </div>
         </div>

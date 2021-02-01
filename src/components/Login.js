@@ -22,7 +22,7 @@ export default function Login() {
     const history = useHistory()
     const [user] = useAuthState(auth);
 
-    
+
     async function handleSubmit(e) {
         e.preventDefault()
 
@@ -45,19 +45,19 @@ export default function Login() {
             const provider = new firebase.auth.GoogleAuthProvider();
             auth.signInWithPopup(provider);
         }
-       
+
         return (
-            <>   
+            <>
                 <Button className="w-100" onClick={signInWithGoogle}>Zaloguj się przez google</Button>
-                {user ?  <Redirect  to="/Home" />:  null }
+                {user ? <Redirect to="/Home"/> : null}
             </>
         )
 
     }
 
     return (
-        <>   
-           
+        <>
+
             <NaviBar/>
             <Card className="align-items-center mt-5 justify-content-center w-100 d-flex">
                 <Card.Body>
@@ -88,7 +88,7 @@ export default function Login() {
             <div className="w-100 text-center mt-2">
                 Nie masz konta? <Link to="/signup">Zarejestruj się</Link>
             </div>
-            
+
         </>
     )
 }

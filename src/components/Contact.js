@@ -2,9 +2,7 @@ import React from "react"
 import NaviBar from "./NaviBar";
 import Footer from "./Footer";
 import Body from "./Body";
-import photo from "./img/logo_header.png"
 import './css/style.css'
-
 
 
 export default function Contact() {

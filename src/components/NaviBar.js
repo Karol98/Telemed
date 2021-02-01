@@ -4,6 +4,7 @@ import {useAuthState} from "react-firebase-hooks/auth";
 import 'firebase/auth';
 import firebase from "firebase";
 import Logout from "./Logout";
+
 const auth = firebase.auth();
 
 export default function NaviBar() {
@@ -19,7 +20,8 @@ export default function NaviBar() {
             <div className="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item ">
-                        <Link to="/"> <a className="nav-link">Główna strona <span className="sr-only">(current)</span></a></Link>
+                        <Link to="/"> <a className="nav-link">Główna strona <span
+                            className="sr-only">(current)</span></a></Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/contact"><a className="nav-link">Kontakt</a></Link>
@@ -30,7 +32,9 @@ export default function NaviBar() {
 
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
-                    {!user ? <Link to="/login"> <button className="btn-primary">Zaloguj</button></Link> : <Logout/>}
+                    {!user ? <Link to="/login">
+                        <button className="btn-primary">Zaloguj</button>
+                    </Link> : <Logout/>}
                 </form>
             </div>
         </nav>
