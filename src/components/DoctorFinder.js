@@ -38,7 +38,6 @@ export default function DoctorFinder() {
         SetList(x);
     }
 
-//
     async function myRespone(SearchUrl) {
         try {
             let res = await fetch(SearchUrl);
@@ -73,7 +72,7 @@ export default function DoctorFinder() {
                 </div>
             </div>
 
-            {searching ? list === undefined ? <div className="loader"/> : <DoctorFinderTab data={list}/> : null}
+            {searching ? list === undefined ? <div className="loader mt-5"/> : <DoctorFinderTab data={list}/> : null}
             <Footer/>
         </div>
     )

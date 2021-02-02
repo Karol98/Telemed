@@ -11,6 +11,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home"
 import DoctorFinder from "./DoctorFinder";
+import Doctors from "./Doctors";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <PrivateRoute path="/chat" component={Chat}/>
                     <Route path="/forgot-password" component={ForgotPassword}/>
                     <Route path="/about" component={About}/>
+                    <Route path="/doctors" component={Doctors}/>
                     <Route path="/contact" component={Contact}/>
                     <Route path="/signup" component={Signup}/>
                     <Route path="/find" component={DoctorFinder}/>

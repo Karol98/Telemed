@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Bożena Abramczyk",
+    "type": "Pediatra",
+    "school": "Akademia Medyczna w Warszawie",
+    "photo": "https://enel.pl/app/uploads/lekarze/39411.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Joanna Abraszek",
+    "type": "Ginekolog",
+    "school": "Warszawski Uniwersytet Medyczny - ginekologia",
+    "photo": "https://enel.pl/app/uploads/lekarze/39240.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Ghassan Abdh Ali Abu-Shawareb",
+    "type": "Internista",
+    "school": "Warszawski Uniwersytet Medyczny.",
+    "photo": "https://enel.pl/app/uploads/lekarze/39202.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "dentysta Ewa Adamska",
+    "type": "Protetyk",
+    "school": "Absolwentka Akademii Medycznej w Łodzi.",
+    "photo": "https://enel.pl/app/uploads/lekarze/38871.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Karolina Agopsowicz-Spławska",
+    "type": "Okulista",
+    "school": "Akademia Medyczna we Wrocławiu, Specjalista okulistyki",
+    "photo": "https://enel.pl/app/uploads/lekarze/39395.jpg",
+    "rate": "3.4 (237 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Rim Myriam Al Jarwan-Kotowska",
+    "type": "Internista",
+    "school": "Akademia Medyczna we Wrocławiu, Specjalista okulistyki",
+    "photo": "https://enel.pl/app/uploads/lekarze/41260.jpg",
+    "rate": "2.4 (287 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Jacek Albiński",
+    "type": "Chirurg ogólny",
+    "school": "Absolwent Akademii Medycznej w Warszawie.",
+    "photo": "https://enel.pl/app/uploads/lekarze/39138.jpg",
+    "rate": "4.4 (227 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Katarzyna Andree-Łapińska",
+    "type": "Internista",
+    "school": "Warszawski Uniwersytet Medyczny",
+    "photo": "https://enel.pl/app/uploads/lekarze/39409.jpg",
+    "rate": "3.8 (117 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Jarosław Andrychowski",
+    "type": "Neurochirurg",
+    "school": "Akademia Medyczna w Warszawie",
+    "photo": "https://enel.pl/app/uploads/lekarze/2727.jpg",
+    "rate": "3.8 (117 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Monika Andrzejak",
+    "type": "Alergolog",
+    "school": "Akademia Medyczna w Białymstoku",
+    "photo": "https://enel.pl/app/uploads/lekarze/33550.jpg",
+    "rate": "5.0 (1117 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Ewa Anielska",
+    "type": "Internista",
+    "school": "Akademia Medyczna w Warszawie",
+    "photo": "https://enel.pl/app/uploads/lekarze/38872.jpg",
+    "rate": "3.0 (17 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Bożena Abramczyk",
+    "type": "Pediatra",
+    "school": "Akademia Medyczna w Warszawie",
+    "photo": "https://enel.pl/app/uploads/lekarze/39411.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Joanna Abraszek",
+    "type": "Ginekolog",
+    "school": "Warszawski Uniwersytet Medyczny - ginekologia",
+    "photo": "https://enel.pl/app/uploads/lekarze/39240.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Ghassan Abdh Ali Abu-Shawareb",
+    "type": "Internista",
+    "school": "Warszawski Uniwersytet Medyczny.",
+    "photo": "https://enel.pl/app/uploads/lekarze/39202.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "dentysta Ewa Adamska",
+    "type": "Protetyk",
+    "school": "Absolwentka Akademii Medycznej w Łodzi.",
+    "photo": "https://enel.pl/app/uploads/lekarze/38871.jpg",
+    "rate": "5.5 (337 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Karolina Agopsowicz-Spławska",
+    "type": "Okulista",
+    "school": "Akademia Medyczna we Wrocławiu, Specjalista okulistyki",
+    "photo": "https://enel.pl/app/uploads/lekarze/39395.jpg",
+    "rate": "3.4 (237 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Rim Myriam Al Jarwan-Kotowska",
+    "type": "Internista",
+    "school": "Akademia Medyczna we Wrocławiu, Specjalista okulistyki",
+    "photo": "https://enel.pl/app/uploads/lekarze/41260.jpg",
+    "rate": "2.4 (287 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Jacek Albiński",
+    "type": "Chirurg ogólny",
+    "school": "Absolwent Akademii Medycznej w Warszawie.",
+    "photo": "https://enel.pl/app/uploads/lekarze/39138.jpg",
+    "rate": "4.4 (227 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Katarzyna Andree-Łapińska",
+    "type": "Internista",
+    "school": "Warszawski Uniwersytet Medyczny",
+    "photo": "https://enel.pl/app/uploads/lekarze/39409.jpg",
+    "rate": "3.8 (117 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Jarosław Andrychowski",
+    "type": "Neurochirurg",
+    "school": "Akademia Medyczna w Warszawie",
+    "photo": "https://enel.pl/app/uploads/lekarze/2727.jpg",
+    "rate": "3.8 (117 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Monika Andrzejak",
+    "type": "Alergolog",
+    "school": "Akademia Medyczna w Białymstoku",
+    "photo": "https://enel.pl/app/uploads/lekarze/33550.jpg",
+    "rate": "5.0 (1117 ocen)",
+    "contact": "adres@email.com"
+  },
+  {
+    "name": "Ewa Anielska",
+    "type": "Internista",
+    "school": "Akademia Medyczna w Warszawie",
+    "photo": "https://enel.pl/app/uploads/lekarze/38872.jpg",
+    "rate": "3.0 (17 ocen)",
+    "contact": "adres@email.com"
+  }
+]

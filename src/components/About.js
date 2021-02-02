@@ -10,7 +10,7 @@ export default function About() {
 
     const [translate, SetTranslate] = useState(false);
 
-    const texts = "Telemed jest projektem zaliczeniowym z przedmiotu ARC.Napisany jest za pomocą reacta, wykorzystujący firebase,Cloud Translation API,Street View static APi,google maps embed Api,Googla places Api. Strona jest skierowana dla ludzi potrzebujących porad medycznych,w łatwy sposób mogą znaleźć szpital w swojej kolicy, mają również możliwość pisać na czacie na żywo"
+    const texts = "Telemed jest projektem zaliczeniowym z przedmiotu PRO.Napisany jest za pomocą reacta, wykorzystujący firebase,Cloud Translation API,Street View static APi,google maps embed Api,Googla places Api. Strona jest skierowana dla ludzi potrzebujących porad medycznych,w łatwy sposób mogą znaleźć szpital w swojej kolicy, mają również możliwość pisać na czacie na żywo"
 
     return (
         <>

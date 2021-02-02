@@ -202,3 +202,19 @@ main::-webkit-scrollbar-thumb {
 .found_places img {
     border: 1px solid black;
 }
+
+.jumbotron_doc {
+    margin: 0;
+    padding: 20px;
+    height: 280px;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)), url("../img/jumbotroon.jpg");
+    background-size: 1950px;
+    background-position: revert;
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 18px;
+}
+.doctors img {
+    bottom: 10px;
+    height: 400px;
+}

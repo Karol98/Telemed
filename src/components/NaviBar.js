@@ -24,12 +24,14 @@ export default function NaviBar() {
                             className="sr-only">(current)</span></a></Link>
                     </li>
                     <li className="nav-item">
+                        <Link to="/doctors"><a className="nav-link">Nasi Lekarze</a></Link>
+                    </li>
+                    <li className="nav-item">
                         <Link to="/contact"><a className="nav-link">Kontakt</a></Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/about"><a className="nav-link">O nas</a></Link>
                     </li>
-
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
                     {!user ? <Link to="/login">
